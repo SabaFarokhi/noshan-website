@@ -16,7 +16,7 @@ export default function TrustSection() {
                     style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>
                 {s.value}
               </span>
-              <span className={`text-xs text-[#0A1628]/40 font-medium ${isRTL ? 'font-persian' : 'tracking-wider uppercase'}`}>
+              <span className={`text-xs text-[#0A1628]/60 font-medium ${isRTL ? 'font-persian' : 'tracking-wider uppercase'}`}>
                 {s.label}
               </span>
             </div>

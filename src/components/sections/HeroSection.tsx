@@ -1,6 +1,9 @@
+'use client';
+
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
@@ -8,114 +11,112 @@ export default function HeroSection() {
   const isRTL = locale === 'fa';
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#0A1628]">
-      <div className={`grid lg:grid-cols-2 min-h-screen ${isRTL ? '' : ''}`}>
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
 
-        {/* ── TEXT SIDE ── */}
-        <div className={`relative z-10 flex flex-col justify-center px-8 sm:px-14 lg:px-16 xl:px-20 pt-32 pb-16 lg:pt-0 ${isRTL ? 'order-2 items-end text-right' : 'order-1'}`}>
-          {/* Subtle glow */}
-          <div className="absolute top-1/3 left-0 w-64 h-64 bg-[#C9A84C] opacity-[0.06] rounded-full blur-[80px] pointer-events-none" />
+      {/* ── FULL-BLEED BACKGROUND IMAGE ── */}
+      <Image
+        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1800&q=90"
+        alt="Insurance consultation"
+        fill
+        className="object-cover object-center"
+        priority
+        sizes="100vw"
+      />
 
-          {/* Badge */}
-          <div className={`relative inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/8 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-8 w-fit ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] animate-pulse" />
-            {t('badge')}
-          </div>
+      {/* Dark overlay — gradient from bottom */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/90 via-[#0A1628]/55 to-[#0A1628]/30" />
 
-          {/* Headline */}
-          <h1 className={`relative font-bold text-white leading-[1.06] mb-6 ${isRTL ? 'font-persian' : ''}`}
-              style={{ fontSize: 'clamp(2.4rem, 5.5vw, 5rem)' }}>
-            {isRTL ? (
-              <>از خانواده،<br />درآمد و<br /><span className="text-[#C9A84C]">آینده‌تان</span><br />محافظت کنید.</>
-            ) : (
-              <>Protect your<br />family, income,<br />and <span className="text-[#C9A84C]">future.</span></>
-            )}
-          </h1>
+      {/* ── CONTENT ── */}
+      <div className={`relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto ${isRTL ? 'font-persian' : ''}`}>
 
-          <p className={`relative text-white/55 leading-relaxed mb-10 max-w-md ${isRTL ? 'font-persian' : ''}`}
-             style={{ fontSize: 'clamp(1rem, 1.4vw, 1.1rem)' }}>
-            {t('subheadline')}
-          </p>
+        {/* Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: -16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className={`inline-flex items-center gap-2 border border-[#C9A84C]/40 bg-[#C9A84C]/10 text-[#C9A84C] text-xs font-semibold px-5 py-2 rounded-full mb-8 ${isRTL ? '' : 'tracking-widest uppercase'}`}
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] animate-pulse" />
+          {locale === 'fa' ? 'مشاور بیمه مجاز · FSRA · انتاریو' : 'FSRA Licensed Insurance Advisor · Ontario'}
+        </motion.div>
 
-          {/* CTAs */}
-          <div className={`relative flex flex-col sm:flex-row gap-3 ${isRTL ? 'sm:flex-row-reverse' : ''}`}>
-            <Link href="/contact"
-              className={`inline-flex items-center justify-center bg-[#C9A84C] hover:bg-[#E8CC87] text-[#0A1628] font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-[#C9A84C]/25 ${isRTL ? 'font-persian' : ''}`}>
-              {t('ctaBook')}
-            </Link>
-            <a href="https://wa.me/14379717732" target="_blank" rel="noopener noreferrer"
-              className={`inline-flex items-center justify-center border border-white/20 hover:border-white/50 hover:bg-white/5 text-white font-semibold text-sm px-8 py-4 rounded-full transition-all duration-300 ${isRTL ? 'font-persian' : ''}`}>
-              {t('ctaMessage')}
-            </a>
-          </div>
+        {/* Name */}
+        <motion.h1
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
+          className="text-white font-bold leading-none mb-4"
+          style={{ fontSize: 'clamp(3.5rem, 9vw, 8rem)' }}
+        >
+          {locale === 'fa' ? 'نوشان حسینی' : 'Noshan Hosseini'}
+        </motion.h1>
 
-          {/* Trust strip */}
-          <div className={`relative flex flex-wrap items-center gap-6 mt-12 pt-10 border-t border-white/10 ${isRTL ? 'flex-row-reverse' : ''}`}>
+        {/* Divider */}
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+          className="w-20 h-0.5 bg-[#C9A84C] rounded-full mb-6"
+        />
+
+        {/* Tagline */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+          className="text-white/85 text-lg lg:text-xl leading-relaxed mb-10 max-w-2xl"
+        >
+          {t('subheadline')}
+        </motion.p>
+
+        {/* CTAs */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.5 }}
+          className={`flex flex-col sm:flex-row gap-4 ${isRTL ? 'sm:flex-row-reverse' : ''}`}
+        >
+          <Link
+            href="/contact"
+            className={`inline-flex items-center justify-center bg-[#C9A84C] hover:bg-[#E8CC87] text-[#0A1628] font-bold text-sm px-10 py-4 rounded-full transition-all duration-300 shadow-lg shadow-[#C9A84C]/30 ${isRTL ? 'font-persian' : ''}`}
+          >
+            {t('ctaBook')}
+          </Link>
+          <a
+            href="https://wa.me/14379717732"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center border border-white/30 hover:border-white/70 hover:bg-white/10 text-white font-semibold text-sm px-10 py-4 rounded-full transition-all duration-300 backdrop-blur-sm ${isRTL ? 'font-persian' : ''}`}
+          >
+            {t('ctaMessage')}
+          </a>
+        </motion.div>
+      </div>
+
+      {/* ── TRUST STRIP — bottom of screen ── */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.1, duration: 0.7 }}
+        className="absolute bottom-0 left-0 right-0 z-10"
+      >
+        <div className="bg-[#0A1628]/70 backdrop-blur-md border-t border-white/10">
+          <div className={`max-w-4xl mx-auto px-6 py-5 flex flex-wrap justify-center gap-10 ${isRTL ? 'flex-row-reverse' : ''}`}>
             {[
-              { v: locale === 'fa' ? '۵۰۰+' : '500+', l: locale === 'fa' ? 'خانواده' : 'Families' },
-              { v: 'FSRA', l: locale === 'fa' ? 'مجاز' : 'Licensed' },
-              { v: locale === 'fa' ? 'دوزبانه' : 'Bilingual', l: 'EN · FA' },
+              { v: locale === 'fa' ? '۵۰۰+' : '500+',      l: locale === 'fa' ? 'خانواده محافظت‌شده' : 'Families Protected' },
+              { v: 'FSRA',                                    l: locale === 'fa' ? 'مجاز رسمی'          : 'Officially Licensed' },
+              { v: locale === 'fa' ? 'دوزبانه' : 'Bilingual', l: 'English · فارسی' },
+              { v: locale === 'fa' ? 'رایگان' : 'Free',       l: locale === 'fa' ? 'مشاوره اول'         : 'First Consultation' },
             ].map((s, i) => (
-              <div key={i} className={`flex flex-col ${isRTL ? 'items-end' : ''}`}>
-                <span className={`text-white font-bold text-lg ${isRTL ? 'font-persian' : ''}`}>{s.v}</span>
-                <span className={`text-white/35 text-[11px] mt-0.5 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>{s.l}</span>
+              <div key={i} className={`flex flex-col items-center`}>
+                <span className={`text-white font-bold text-base ${isRTL ? 'font-persian' : ''}`}>{s.v}</span>
+                <span className={`text-white/60 text-[11px] mt-0.5 ${isRTL ? 'font-persian' : 'tracking-wide uppercase'}`}>{s.l}</span>
               </div>
             ))}
           </div>
         </div>
+      </motion.div>
 
-        {/* ── PHOTO SIDE ── */}
-        <div className={`relative hidden lg:flex items-end justify-center bg-[#F4F2EE] overflow-hidden ${isRTL ? 'order-1' : 'order-2'}`}>
-          {/* Warm gradient top */}
-          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#F4F2EE] to-transparent z-10" />
-
-          {/* Gold circle accent */}
-          <div className="absolute top-1/4 right-1/4 w-80 h-80 rounded-full border border-[#C9A84C]/15 pointer-events-none" />
-          <div className="absolute top-1/3 right-1/3 w-48 h-48 rounded-full border border-[#C9A84C]/10 pointer-events-none" />
-
-          {/* Noshan's photo — fills from bottom */}
-          <div className="relative w-full h-full flex items-end justify-center">
-            <Image
-              src="/images/noshan-hero.jpg"
-              alt="Noshan Hosseini — Insurance Advisor Ontario"
-              width={560}
-              height={740}
-              className="object-contain object-bottom max-h-[92vh] w-auto relative z-20"
-              priority
-              sizes="50vw"
-            />
-          </div>
-
-          {/* Floating credential badge */}
-          <div className={`absolute bottom-10 ${isRTL ? 'right-10' : 'left-10'} z-30 bg-white rounded-2xl shadow-xl shadow-[#0A1628]/10 px-5 py-4 border border-[#E5E1DA]`}>
-            <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-              <div className="w-9 h-9 bg-[#C9A84C]/10 rounded-full flex items-center justify-center shrink-0">
-                <div className="w-2.5 h-2.5 bg-[#C9A84C] rounded-full" />
-              </div>
-              <div className={isRTL ? 'text-right' : ''}>
-                <p className={`text-[12px] font-bold text-[#0A1628] ${isRTL ? 'font-persian' : ''}`}>
-                  {locale === 'fa' ? 'مجاز FSRA · انتاریو' : 'FSRA Licensed · Ontario'}
-                </p>
-                <p className={`text-[11px] text-[#0A1628]/40 mt-0.5 ${isRTL ? 'font-persian' : ''}`}>
-                  {locale === 'fa' ? 'مشاور بیمه رسمی' : 'Regulated Insurance Advisor'}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile photo strip */}
-      <div className="lg:hidden relative h-72 bg-[#F4F2EE] overflow-hidden flex items-end justify-center">
-        <Image
-          src="/images/noshan-hero.jpg"
-          alt="Noshan Hosseini"
-          width={300}
-          height={380}
-          className="object-contain object-bottom h-full w-auto"
-          priority
-        />
-      </div>
     </section>
   );
 }

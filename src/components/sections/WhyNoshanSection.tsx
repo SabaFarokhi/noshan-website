@@ -12,21 +12,19 @@ export default function WhyNoshanSection() {
   return (
     <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className={`grid lg:grid-cols-2 gap-16 items-center ${isRTL ? '' : ''}`}>
+        <div className={`grid lg:grid-cols-2 gap-16 items-center`}>
 
-          {/* Photo side */}
+          {/* Image side */}
           <div className={`relative ${isRTL ? 'order-2' : 'order-1'}`}>
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl shadow-[#0A1628]/10">
               <Image
-                src="/images/noshan-hero.jpg"
-                alt="Noshan Hosseini — Insurance Advisor"
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=85"
+                alt="Insurance consultation and planning"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              {/* Overlay gradient at bottom */}
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0A1628]/60 to-transparent" />
-              {/* Quote on photo */}
+              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#0A1628]/70 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className={`text-white font-semibold text-sm leading-relaxed ${isRTL ? 'font-persian text-right' : ''}`}>
                   {locale === 'fa'
@@ -38,7 +36,6 @@ export default function WhyNoshanSection() {
                 </p>
               </div>
             </div>
-            {/* Gold accent corner */}
             <div className={`absolute -bottom-5 ${isRTL ? '-left-5' : '-right-5'} w-28 h-28 border-2 border-[#C9A84C]/25 rounded-3xl pointer-events-none`} />
           </div>
 

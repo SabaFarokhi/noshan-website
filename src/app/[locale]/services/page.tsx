@@ -1,6 +1,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import type { Metadata } from 'next';
 import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/shared/WhatsAppButton';
@@ -22,6 +23,15 @@ export async function generateMetadata({
   };
 }
 
+const serviceImages: Record<string, string> = {
+  'life-insurance':             'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80',
+  'disability-insurance':       'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+  'critical-illness-insurance': 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1b89?w=800&q=80',
+  'whole-life-insurance':       'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&q=80',
+  'universal-life-insurance':   'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
+  'travel-insurance':           'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80',
+};
+
 function ServicesContent() {
   const t = useTranslations('services');
   const locale = useLocale();
@@ -34,7 +44,6 @@ function ServicesContent() {
       <Navbar />
       <main className="pt-20">
 
-        {/* Header */}
         <section className="bg-[#0A1628] py-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className={`${isRTL ? 'text-right' : 'text-center'}`}>
@@ -51,7 +60,6 @@ function ServicesContent() {
           </div>
         </section>
 
-        {/* Cards grid */}
         <section className="bg-[#F4F2EE] py-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -59,14 +67,23 @@ function ServicesContent() {
                 <Link
                   key={item.slug}
                   href={`/services/${item.slug}`}
-                  className={`group bg-white rounded-2xl border border-[#E5E1DA] hover:border-[#C9A84C]/30 hover:shadow-xl hover:shadow-[#0A1628]/6 transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
+                  className={`group bg-white rounded-2xl overflow-hidden border border-[#E5E1DA] hover:border-[#C9A84C]/30 hover:shadow-xl hover:shadow-[#0A1628]/6 transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
                 >
-                  <div className="p-7">
-                    <div className={`w-10 h-1 bg-[#C9A84C] rounded-full mb-5 ${isRTL ? 'mr-auto' : ''}`} />
+                  <div className="relative h-44 overflow-hidden">
+                    <Image
+                      src={serviceImages[item.slug] || serviceImages['life-insurance']}
+                      alt={item.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/40 to-transparent" />
+                  </div>
+                  <div className="p-6">
                     <h2 className={`text-lg font-bold text-[#0A1628] mb-2 ${isRTL ? 'font-persian' : ''}`}>
                       {item.title}
                     </h2>
-                    <p className={`text-sm text-[#0A1628]/55 leading-relaxed mb-6 ${isRTL ? 'font-persian' : ''}`}>
+                    <p className={`text-sm text-[#0A1628]/55 leading-relaxed mb-5 ${isRTL ? 'font-persian' : ''}`}>
                       {item.description}
                     </p>
                     <span className={`inline-flex items-center gap-1.5 text-sm font-semibold text-[#0A1628] group-hover:text-[#C9A84C] transition-colors ${isRTL ? 'flex-row-reverse font-persian' : ''}`}>

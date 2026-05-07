@@ -38,7 +38,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" className={`flex flex-col ${isRTL ? 'items-end' : ''}`}>
-            <span className={`text-[16px] font-bold text-[#0A1628] leading-tight ${isRTL ? 'font-persian' : ''}`}>
+            <span className={`text-[16px] font-bold leading-tight transition-colors duration-300 ${scrolled ? 'text-[#0A1628]' : 'text-white'} ${isRTL ? 'font-persian' : ''}`}>
               {locale === 'fa' ? 'نوشان حسینی' : 'Noshan Hosseini'}
             </span>
             <span className={`text-[11px] text-[#C9A84C] font-semibold mt-0.5 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className={`hidden lg:flex items-center gap-8 ${isRTL ? 'flex-row-reverse' : ''}`}>
             {links.map(l => (
               <Link key={l.href} href={l.href}
-                className={`text-sm font-medium text-[#0A1628]/60 hover:text-[#0A1628] transition-colors relative group ${isRTL ? 'font-persian' : ''}`}>
+                className={`text-sm font-medium transition-colors relative group ${scrolled ? 'text-[#0A1628]/65 hover:text-[#0A1628]' : 'text-white/80 hover:text-white'} ${isRTL ? 'font-persian' : ''}`}>
                 {l.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C9A84C] group-hover:w-full transition-all duration-200" />
               </Link>
@@ -60,22 +60,22 @@ export default function Navbar() {
           {/* Right */}
           <div className={`hidden lg:flex items-center gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
             <Link href={pathname} locale={other}
-              className="flex items-center gap-1.5 text-sm text-[#0A1628]/50 hover:text-[#0A1628] transition-colors">
+              className={`flex items-center gap-1.5 text-sm transition-colors ${scrolled ? 'text-[#0A1628]/50 hover:text-[#0A1628]' : 'text-white/70 hover:text-white'}`}>
               <Globe size={14} />
               <span className={other === 'fa' ? 'font-persian' : ''}>{other === 'fa' ? 'فارسی' : 'English'}</span>
             </Link>
             <Link href="/contact"
-              className={`bg-[#0A1628] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#142240] transition-colors ${isRTL ? 'font-persian' : ''}`}>
+              className={`text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 ${scrolled ? 'bg-[#0A1628] text-white hover:bg-[#142240]' : 'bg-white/15 text-white border border-white/30 hover:bg-white/25'} ${isRTL ? 'font-persian' : ''}`}>
               {t('bookConsultation')}
             </Link>
           </div>
 
           {/* Mobile */}
           <div className={`flex lg:hidden items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-            <Link href={pathname} locale={other} className="text-sm text-[#0A1628]/50">
+            <Link href={pathname} locale={other} className={`text-sm transition-colors ${scrolled ? 'text-[#0A1628]/50' : 'text-white/70'}`}>
               <Globe size={16} />
             </Link>
-            <button onClick={() => setOpen(!open)} className="p-2 text-[#0A1628]">
+            <button onClick={() => setOpen(!open)} className={`p-2 transition-colors ${scrolled ? 'text-[#0A1628]' : 'text-white'}`}>
               {open ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>

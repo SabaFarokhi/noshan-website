@@ -70,6 +70,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body
+        suppressHydrationWarning
         className={`min-h-screen flex flex-col ${
           isRTL ? 'font-persian' : 'font-sans'
         } antialiased`}

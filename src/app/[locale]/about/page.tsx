@@ -1,6 +1,5 @@
 import { useTranslations, useLocale } from 'next-intl';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -26,38 +25,14 @@ function AboutContent() {
     <>
       <Navbar />
       <main className="pt-20">
-
-        {/* Hero — dark navy with photo */}
-        <section className="bg-[#0A1628] py-0 overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 lg:px-10">
-            <div className={`grid lg:grid-cols-2 gap-0 items-end min-h-[380px] ${isRTL ? '' : ''}`}>
-
-              {/* Text side */}
-              <div className={`flex flex-col justify-center py-16 lg:py-20 ${isRTL ? 'order-2 text-right' : 'order-1'}`}>
-                <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 w-fit ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
-                  {t('badge')}
-                </div>
-                <h1 className={`text-3xl lg:text-5xl font-bold text-white mb-5 leading-tight ${isRTL ? 'font-persian' : ''}`}>{t('title')}</h1>
-                <p className={`text-white/50 text-lg leading-relaxed max-w-md ${isRTL ? 'font-persian' : ''}`}>
-                  {locale === 'fa'
-                    ? 'مشاور بیمه مجاز FSRA · انتاریو · دوزبانه فارسی و انگلیسی'
-                    : 'FSRA Licensed Insurance Advisor · Ontario · Bilingual EN & FA'}
-                </p>
+        {/* Hero */}
+        <section className="bg-[#0A1628] py-20">
+          <div className="max-w-4xl mx-auto px-6 lg:px-10">
+            <div className={`${isRTL ? 'text-right' : ''}`}>
+              <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
+                {t('badge')}
               </div>
-
-              {/* Photo side */}
-              <div className={`relative flex items-end justify-center lg:justify-end ${isRTL ? 'order-1' : 'order-2'}`}>
-                <div className="relative h-72 lg:h-96 w-56 lg:w-72">
-                  <Image
-                    src="/images/noshan-hero.jpg"
-                    alt="Noshan Hosseini — Insurance Advisor"
-                    fill
-                    className="object-contain object-bottom"
-                    sizes="(max-width: 1024px) 224px, 288px"
-                    priority
-                  />
-                </div>
-              </div>
+              <h1 className={`text-3xl lg:text-5xl font-bold text-white mb-5 leading-tight ${isRTL ? 'font-persian' : ''}`}>{t('title')}</h1>
             </div>
           </div>
         </section>

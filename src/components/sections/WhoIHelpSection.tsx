@@ -1,7 +1,13 @@
 import { useTranslations, useLocale } from 'next-intl';
-import { Home, Globe, Briefcase, User, Building2 } from 'lucide-react';
+import Image from 'next/image';
 
-const iconMap: Record<string, React.ElementType> = { Home, Globe, Briefcase, User, Building2 };
+const groupImages: Record<string, string> = {
+  Home:      'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=500&q=80',
+  Globe:     'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80',
+  Briefcase: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=80',
+  User:      'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80',
+  Building2: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&q=80',
+};
 
 export default function WhoIHelpSection() {
   const t = useTranslations('whoIHelp');
@@ -21,21 +27,27 @@ export default function WhoIHelpSection() {
           <p className="text-[#0A1628]/55 text-lg max-w-2xl mx-auto">{t('subtitle')}</p>
         </div>
 
-        <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 ${isRTL ? '' : ''}`}>
-          {groups.map((g, i) => {
-            const Icon = iconMap[g.icon] || Home;
-            return (
-              <div key={i} className={`bg-[#F4F2EE] rounded-2xl p-6 hover:bg-white hover:shadow-lg hover:shadow-[#0A1628]/5 border border-transparent hover:border-[#E5E1DA] transition-all duration-300 ${isRTL ? 'text-right' : ''}`}>
-                <div className={`mb-4 ${isRTL ? 'flex justify-end' : ''}`}>
-                  <div className="w-11 h-11 bg-[#0A1628]/8 rounded-xl flex items-center justify-center">
-                    <Icon size={20} className="text-[#0A1628]" />
-                  </div>
-                </div>
-                <h3 className={`font-bold text-[#0A1628] mb-1.5 ${isRTL ? 'font-persian' : ''}`}>{g.title}</h3>
-                <p className={`text-sm text-[#0A1628]/55 leading-relaxed ${isRTL ? 'font-persian' : ''}`}>{g.description}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {groups.map((g, i) => (
+            <div key={i} className={`group bg-[#F4F2EE] rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-[#0A1628]/8 border border-transparent hover:border-[#E5E1DA] transition-all duration-300 ${isRTL ? 'text-right' : ''}`}>
+              <div className="relative h-36 overflow-hidden">
+                <Image
+                  src={groupImages[g.icon] || groupImages['Home']}
+                  alt={g.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 to-transparent" />
+                <p className={`absolute bottom-3 ${isRTL ? 'right-3' : 'left-3'} right-3 text-white font-bold text-sm leading-tight ${isRTL ? 'font-persian text-right' : ''}`}>
+                  {g.title}
+                </p>
               </div>
-            );
-          })}
+              <div className="p-4">
+                <p className={`text-xs text-[#0A1628]/55 leading-relaxed ${isRTL ? 'font-persian' : ''}`}>{g.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
