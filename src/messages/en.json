@@ -1,0 +1,447 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookConsultation": "Book a Consultation"
+  },
+  "hero": {
+    "badge": "Licensed Insurance Advisor · Ontario",
+    "headline": "Protect your family, income, and future.",
+    "subheadline": "Personalized insurance guidance for Ontario families, newcomers, professionals, and business owners.",
+    "ctaBook": "Book a Free Consultation",
+    "ctaMessage": "Send a Message"
+  },
+  "trust": {
+    "title": "Trusted by Ontario Families",
+    "subtitle": "Helping clients understand and protect what matters most — clearly, honestly, and without pressure.",
+    "stats": [
+      { "value": "500+", "label": "Families Protected" },
+      { "value": "6+", "label": "Insurance Products" },
+      { "value": "Ontario", "label": "Licensed & Regulated" },
+      { "value": "FSRA", "label": "Compliant Advice" }
+    ]
+  },
+  "services": {
+    "title": "Insurance Solutions",
+    "subtitle": "Comprehensive coverage tailored to your life stage, goals, and budget.",
+    "learnMore": "Learn more",
+    "items": [
+      {
+        "slug": "life-insurance",
+        "title": "Life Insurance",
+        "description": "Provide financial security for your loved ones in the event of your passing. A cornerstone of any solid financial plan.",
+        "icon": "Shield"
+      },
+      {
+        "slug": "disability-insurance",
+        "title": "Disability Insurance",
+        "description": "Protect your income if illness or injury prevents you from working. Your ability to earn is your most valuable asset.",
+        "icon": "HeartPulse"
+      },
+      {
+        "slug": "critical-illness-insurance",
+        "title": "Critical Illness Insurance",
+        "description": "Receive a lump-sum payment upon diagnosis of a covered illness, giving you financial freedom to focus on recovery.",
+        "icon": "Activity"
+      },
+      {
+        "slug": "whole-life-insurance",
+        "title": "Whole Life Insurance",
+        "description": "Lifelong coverage with a guaranteed death benefit and a cash value component that grows over time.",
+        "icon": "TrendingUp"
+      },
+      {
+        "slug": "universal-life-insurance",
+        "title": "Universal Life Insurance",
+        "description": "Flexible permanent life insurance that combines protection with tax-advantaged investment growth.",
+        "icon": "BarChart3"
+      },
+      {
+        "slug": "travel-insurance",
+        "title": "Travel Insurance",
+        "description": "Stay protected abroad with comprehensive coverage for medical emergencies, trip cancellations, and more.",
+        "icon": "Plane"
+      }
+    ]
+  },
+  "whoIHelp": {
+    "title": "Who I Help",
+    "subtitle": "Whether you're just starting out or planning for the future, I'll guide you to the right coverage.",
+    "groups": [
+      {
+        "title": "Ontario Families",
+        "description": "Protecting your family's financial future with the right life and health coverage.",
+        "icon": "Home"
+      },
+      {
+        "title": "Newcomers to Canada",
+        "description": "Navigating the Canadian insurance landscape with clear, culturally sensitive guidance.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Professionals",
+        "description": "Safeguarding your income and long-term financial goals with tailored disability and life plans.",
+        "icon": "Briefcase"
+      },
+      {
+        "title": "Self-Employed",
+        "description": "Building your own safety net when your employer doesn't provide group benefits.",
+        "icon": "User"
+      },
+      {
+        "title": "Business Owners",
+        "description": "Protecting your business, key employees, and ensuring continuity with corporate insurance solutions.",
+        "icon": "Building2"
+      }
+    ]
+  },
+  "whyNoshan": {
+    "title": "Why Work With Noshan",
+    "subtitle": "Insurance advice should feel clear, honest, and empowering — not confusing or pressured.",
+    "reasons": [
+      {
+        "title": "Clear, Jargon-Free Guidance",
+        "description": "I explain every option in plain language so you can make confident, informed decisions."
+      },
+      {
+        "title": "Personalized Recommendations",
+        "description": "No one-size-fits-all plans. Every recommendation is built around your unique situation and goals."
+      },
+      {
+        "title": "Bilingual Support",
+        "description": "Fluent in both English and Persian, providing culturally comfortable service for the Iranian community."
+      },
+      {
+        "title": "FSRA-Regulated Advice",
+        "description": "Licensed and regulated by the Financial Services Regulatory Authority of Ontario. Your trust is always protected."
+      },
+      {
+        "title": "No Pressure, Ever",
+        "description": "My goal is to educate and empower you. You decide what's right for your family — on your own timeline."
+      },
+      {
+        "title": "Ongoing Support",
+        "description": "I'm here long after the policy is signed — for life changes, reviews, and questions whenever you need."
+      }
+    ]
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "Three simple steps to get the coverage that's right for you.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Understand",
+        "description": "We start with a free consultation to understand your life situation, goals, and what you need to protect."
+      },
+      {
+        "number": "02",
+        "title": "Plan",
+        "description": "I research and present personalized options from leading Canadian insurers — clearly explained, no pressure."
+      },
+      {
+        "number": "03",
+        "title": "Protect",
+        "description": "Once you choose the right plan, I handle everything from application to approval. You're covered."
+      }
+    ]
+  },
+  "faqPreview": {
+    "title": "Common Questions",
+    "subtitle": "Quick answers to questions I hear most often.",
+    "viewAll": "View All FAQs",
+    "items": [
+      {
+        "question": "How much does a consultation cost?",
+        "answer": "The initial consultation is completely free. There is no obligation to purchase any product."
+      },
+      {
+        "question": "Am I too young to think about life insurance?",
+        "answer": "The younger and healthier you are, the lower your premiums. Starting early is one of the best financial decisions you can make."
+      },
+      {
+        "question": "What if I already have insurance through my employer?",
+        "answer": "Group benefits are a great start, but they often don't follow you when you change jobs. Individual coverage ensures you're always protected."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Protect What Matters Most?",
+    "subtitle": "Book a free, no-pressure consultation and let's build the right plan for your future.",
+    "ctaBook": "Book a Free Consultation",
+    "ctaMessage": "Send a Message"
+  },
+  "footer": {
+    "tagline": "Insurance Advisor · Financial Planner · Ontario",
+    "services": "Services",
+    "company": "Company",
+    "links": {
+      "about": "About",
+      "services": "Services",
+      "blog": "Blog",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "disclaimer": "The information on this website is for educational purposes only and does not replace personalized insurance advice. Noshan Hosseini is a licensed insurance advisor regulated by the Financial Services Regulatory Authority of Ontario (FSRA).",
+    "rights": "All rights reserved.",
+    "phone": "437-971-7732",
+    "instagram": "@noshan_hosseini"
+  },
+  "about": {
+    "badge": "Insurance Advisor · Financial Planner",
+    "title": "Helping Families Build Financial Confidence",
+    "bio1": "I'm Noshan Hosseini, a licensed Insurance Advisor and Financial Planner based in Ontario, Canada. My mission is simple: to help families, newcomers, and professionals understand insurance clearly and make decisions they feel confident about.",
+    "bio2": "Having navigated the Canadian financial system myself as a newcomer, I understand the confusion and uncertainty that comes with it. That experience shaped how I work — with empathy, patience, and a commitment to making complex concepts accessible to everyone.",
+    "bio3": "Whether you're a young professional starting your career, a new family looking to protect your children, or a business owner planning for continuity, I take the time to understand your unique situation and build a plan that fits your life.",
+    "valueTitle": "My Commitment to You",
+    "values": [
+      "Honest, pressure-free advice — always",
+      "Fully bilingual service in English and Persian",
+      "FSRA-regulated, compliant guidance",
+      "Ongoing support throughout your journey",
+      "Personalized plans, not cookie-cutter solutions"
+    ],
+    "ctaTitle": "Let's Start the Conversation",
+    "ctaSubtitle": "A 30-minute consultation is free and comes with zero obligation.",
+    "ctaBook": "Book a Free Consultation"
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Book Your Free Consultation",
+    "subtitle": "Have questions about insurance? Ready to get started? I'd love to hear from you.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number (Optional)",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! I'll be in touch within 24 hours.",
+      "error": "Something went wrong. Please try again or contact me directly."
+    },
+    "booking": {
+      "title": "Book a Call",
+      "subtitle": "Prefer to schedule directly? Choose a time that works for you.",
+      "cta": "Open Booking Calendar"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "subtitle": "Message me directly for quick questions.",
+      "cta": "Chat on WhatsApp"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "subtitle": "Follow for insurance tips and updates.",
+      "cta": "Follow @noshan_hosseini"
+    },
+    "phone": {
+      "title": "Phone",
+      "subtitle": "Available for calls during business hours."
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about working with an insurance advisor.",
+    "categories": [
+      {
+        "title": "Getting Started",
+        "items": [
+          {
+            "question": "How much does a consultation cost?",
+            "answer": "The initial consultation is completely free with no obligation to purchase any product. My goal is to educate and help you find the right coverage for your needs."
+          },
+          {
+            "question": "How do I know which insurance I need?",
+            "answer": "That's exactly what our consultation is for. I take the time to understand your life situation, goals, and finances before making any recommendations."
+          },
+          {
+            "question": "How long does it take to get coverage?",
+            "answer": "It depends on the product and insurer. Some policies can be in place within days; others that require medical underwriting may take a few weeks."
+          }
+        ]
+      },
+      {
+        "title": "Life & Health Insurance",
+        "items": [
+          {
+            "question": "Am I too young for life insurance?",
+            "answer": "No — in fact, the younger and healthier you are, the lower your premiums will be. Starting early locks in lower rates and provides peace of mind for your family."
+          },
+          {
+            "question": "What's the difference between term and whole life insurance?",
+            "answer": "Term insurance covers you for a set period (e.g., 20 years) and is generally more affordable. Whole life provides permanent coverage and builds cash value over time."
+          },
+          {
+            "question": "Do I still need insurance if I have a group plan through work?",
+            "answer": "Group benefits are a great foundation, but they typically don't follow you when you change jobs. Individual coverage ensures you're always protected regardless of your employment."
+          }
+        ]
+      },
+      {
+        "title": "For Newcomers",
+        "items": [
+          {
+            "question": "Can I get insurance as a newcomer to Canada?",
+            "answer": "Yes. Many insurance products are available to newcomers, even those without a long Canadian credit or medical history. I specialize in helping newcomers navigate this process."
+          },
+          {
+            "question": "Is your service available in Persian?",
+            "answer": "Yes — I'm fluent in both English and Persian (Farsi) and provide fully bilingual service to make sure nothing is lost in translation."
+          }
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "badge": "Blog",
+    "title": "Insurance Insights",
+    "subtitle": "Clear, educational articles to help you make informed decisions about your coverage.",
+    "readMore": "Read Article",
+    "posts": [
+      {
+        "slug": "why-life-insurance-matters",
+        "title": "Why Life Insurance Matters More Than You Think",
+        "excerpt": "Many people put off getting life insurance, thinking it's only for older adults or the wealthy. Here's why that thinking could leave your family vulnerable.",
+        "date": "2025-04-15",
+        "category": "Life Insurance",
+        "readTime": "5 min read"
+      },
+      {
+        "slug": "newcomers-guide-to-insurance",
+        "title": "A Newcomer's Guide to Insurance in Canada",
+        "excerpt": "Navigating the Canadian insurance system as a newcomer can feel overwhelming. This guide breaks down the essentials in plain language.",
+        "date": "2025-03-28",
+        "category": "For Newcomers",
+        "readTime": "7 min read"
+      },
+      {
+        "slug": "disability-insurance-explained",
+        "title": "Disability Insurance Explained: Protecting Your Most Valuable Asset",
+        "excerpt": "Your ability to earn an income is worth more than your home or your car. Disability insurance protects it — here's how.",
+        "date": "2025-03-10",
+        "category": "Disability Insurance",
+        "readTime": "6 min read"
+      }
+    ]
+  },
+  "servicePages": {
+    "life-insurance": {
+      "title": "Life Insurance",
+      "subtitle": "Protect the people you love most. Life insurance ensures your family is financially secure no matter what happens.",
+      "intro": "Life insurance is the foundation of any solid financial plan. It provides your loved ones with a tax-free lump sum payment in the event of your death — giving them the financial stability to maintain their lifestyle, pay off debts, and build their future.",
+      "benefits": [
+        "Tax-free death benefit for your beneficiaries",
+        "Pays off mortgage and outstanding debts",
+        "Replaces lost income for your family",
+        "Funds children's education",
+        "Peace of mind for the people you love"
+      ],
+      "types": [
+        { "name": "Term Life Insurance", "description": "Affordable coverage for a set period (10, 20, or 30 years). Ideal for young families and those with specific financial obligations." },
+        { "name": "Whole Life Insurance", "description": "Permanent coverage with a cash value component that grows over time. Builds wealth while protecting your family." },
+        { "name": "Universal Life Insurance", "description": "Flexible permanent insurance combining a death benefit with tax-advantaged investments." }
+      ]
+    },
+    "disability-insurance": {
+      "title": "Disability Insurance",
+      "subtitle": "Your income is your most valuable asset. Disability insurance protects it when illness or injury keeps you from working.",
+      "intro": "Statistics show that 1 in 3 Canadians will experience a disability lasting more than 90 days before the age of 65. Disability insurance replaces a portion of your income — typically 60–85% — so you can focus on recovery without financial stress.",
+      "benefits": [
+        "Replaces 60–85% of your income",
+        "Covers both illness and injury",
+        "Short-term and long-term options available",
+        "Especially critical for self-employed individuals",
+        "Protects your lifestyle and savings"
+      ],
+      "types": [
+        { "name": "Short-Term Disability", "description": "Covers you for weeks to months following an illness or injury. Provides immediate income replacement." },
+        { "name": "Long-Term Disability", "description": "Provides ongoing income replacement for extended periods — often until age 65 — for serious conditions." },
+        { "name": "Own-Occupation Coverage", "description": "The gold standard. Pays out if you're unable to perform the specific duties of your own occupation." }
+      ]
+    },
+    "critical-illness-insurance": {
+      "title": "Critical Illness Insurance",
+      "subtitle": "A life-changing diagnosis shouldn't mean financial devastation. Critical illness insurance gives you the freedom to focus on recovery.",
+      "intro": "Critical illness insurance pays a one-time, tax-free lump sum if you are diagnosed with a covered serious illness such as cancer, heart attack, or stroke. You can use this money however you need — medical expenses, time off work, modifications to your home, or simply reducing financial stress.",
+      "benefits": [
+        "Tax-free lump-sum payment upon diagnosis",
+        "Use the money however you choose",
+        "Covers 25+ critical illnesses",
+        "Complements existing health and disability coverage",
+        "Return of premium options available"
+      ],
+      "types": [
+        { "name": "Standard Coverage", "description": "Covers major conditions including cancer, heart attack, stroke, and more. Most popular option." },
+        { "name": "Enhanced Coverage", "description": "Broader coverage for 25+ conditions including less common but serious illnesses." },
+        { "name": "Return of Premium", "description": "If you never make a claim, a portion of your premiums may be returned to you." }
+      ]
+    },
+    "whole-life-insurance": {
+      "title": "Whole Life Insurance",
+      "subtitle": "Permanent protection with the added benefit of growing cash value — a cornerstone of long-term financial planning.",
+      "intro": "Whole life insurance provides coverage for your entire lifetime, along with a savings component called cash value that grows at a guaranteed rate. It's a disciplined, tax-advantaged way to build wealth while ensuring your family is always protected.",
+      "benefits": [
+        "Lifelong coverage — never expires",
+        "Guaranteed cash value growth",
+        "Tax-sheltered accumulation",
+        "Borrow against your policy if needed",
+        "Predictable, level premiums for life"
+      ],
+      "types": [
+        { "name": "Participating Whole Life", "description": "Shares in the insurer's profits through dividends, which can further grow your cash value." },
+        { "name": "Non-Participating Whole Life", "description": "Fixed premiums and guaranteed cash value growth. Simpler and more predictable." },
+        { "name": "Limited Pay Whole Life", "description": "Pay premiums for a set period (e.g., 20 years) while maintaining lifetime coverage." }
+      ]
+    },
+    "universal-life-insurance": {
+      "title": "Universal Life Insurance",
+      "subtitle": "The flexibility of term insurance combined with the wealth-building power of permanent coverage.",
+      "intro": "Universal life insurance is a flexible form of permanent insurance that separates the protection and savings components. You can adjust your premiums and death benefit as your life changes, while the investment component grows in a tax-advantaged account.",
+      "benefits": [
+        "Flexible premiums and death benefit",
+        "Tax-sheltered investment growth",
+        "Combines protection with wealth building",
+        "Adaptable to life changes",
+        "Estate planning and legacy tool"
+      ],
+      "types": [
+        { "name": "Indexed Universal Life", "description": "Links your cash value growth to a market index, offering growth potential with downside protection." },
+        { "name": "Guaranteed Universal Life", "description": "Focuses on guaranteed lifetime protection with minimal cash value — lower cost permanent insurance." },
+        { "name": "Variable Universal Life", "description": "Invest the cash value in a variety of sub-accounts for potentially higher returns (with more risk)." }
+      ]
+    },
+    "travel-insurance": {
+      "title": "Travel Insurance",
+      "subtitle": "Explore the world with confidence. Travel insurance protects you from unexpected costs wherever you go.",
+      "intro": "Canadian provincial health insurance provides very limited coverage outside Canada. A single medical emergency abroad can cost tens of thousands of dollars. Travel insurance ensures you're covered for emergencies, cancellations, and more — so you can focus on enjoying your trip.",
+      "benefits": [
+        "Emergency medical coverage abroad",
+        "Trip cancellation and interruption",
+        "Baggage loss and delay",
+        "Medical evacuation if needed",
+        "24/7 emergency assistance"
+      ],
+      "types": [
+        { "name": "Emergency Medical Insurance", "description": "Covers hospital, doctor, and emergency costs while travelling outside your province or Canada." },
+        { "name": "All-Inclusive Travel Insurance", "description": "Comprehensive plan covering medical, trip cancellation, baggage, and more." },
+        { "name": "Multi-Trip Annual Plan", "description": "Ideal for frequent travellers. One policy covers all trips taken within a year." }
+      ]
+    }
+  },
+  "common": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "backToServices": "Back to Services",
+    "bookConsultation": "Book a Free Consultation",
+    "sendMessage": "Send a Message",
+    "callNow": "Call Now",
+    "readyToStart": "Ready to get started?",
+    "freeConsult": "Book your free consultation today."
+  }
+}
