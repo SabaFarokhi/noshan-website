@@ -4,8 +4,8 @@ import Image from 'next/image';
 const groupImages: Record<string, string> = {
   Home:      'https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=800&q=95',
   Globe:     'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=95',
-  Briefcase: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=95',
-  User:      'https://images.unsplash.com/photo-1485217988980-11786ced9454?w=800&q=95',
+  Briefcase: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=95',
+  User:      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=95',
   Building2: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=95',
 };
 
@@ -30,7 +30,7 @@ export default function WhoIHelpSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {groups.map((g, i) => (
             <div key={i} className={`group bg-[#F4F2EE] rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-[#0A1628]/8 border border-transparent hover:border-[#E5E1DA] transition-all duration-300 ${isRTL ? 'text-right' : ''}`}>
-              <div className="relative h-36 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
                 <Image
                   src={groupImages[g.icon] || groupImages['Home']}
                   alt={g.title}
