@@ -33,7 +33,7 @@ function AboutContent() {
               {/* Photo */}
               <div className="shrink-0 relative w-56 h-72 lg:w-72 lg:h-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 border-2 border-[#C9A84C]/20">
                 <Image
-                  src="/images/noshan-profile.jpg"
+                  src="/images/noshan.jpg"
                   alt="Noshan Hosseini"
                   fill
                   className="object-cover object-top"

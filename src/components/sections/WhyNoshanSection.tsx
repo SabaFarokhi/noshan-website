@@ -18,7 +18,7 @@ export default function WhyNoshanSection() {
           <div className={`relative ${isRTL ? 'order-2' : 'order-1'}`}>
             <div className="relative rounded-3xl overflow-hidden h-[420px] lg:h-[520px] shadow-2xl shadow-[#0A1628]/10">
               <Image
-                src="/images/noshan-profile.jpg"
+                src="/images/noshan.jpg"
                 alt="Noshan Hosseini - Insurance Advisor"
                 fill
                 className="object-cover object-center"
