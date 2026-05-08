@@ -16,7 +16,7 @@ export default function WhyNoshanSection() {
 
           {/* Image side */}
           <div className={`relative ${isRTL ? 'order-2' : 'order-1'}`}>
-            <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl shadow-[#0A1628]/10">
+            <div className="relative rounded-3xl overflow-hidden h-[420px] lg:h-[520px] shadow-2xl shadow-[#0A1628]/10">
               <Image
                 src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=85"
                 alt="Insurance consultation and planning"
@@ -53,9 +53,9 @@ export default function WhyNoshanSection() {
 
             <div className="space-y-4">
               {reasons.slice(0, 4).map((r, i) => (
-                <div key={i} className={`flex gap-4 p-4 rounded-2xl bg-[#F4F2EE] hover:bg-white hover:shadow-md hover:border-[#E5E1DA] border border-transparent transition-all duration-300 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
+                <div key={i} className={`flex gap-4 p-4 rounded-2xl bg-[#F4F2EE] hover:bg-white hover:shadow-md hover:border-[#E5E1DA] border border-transparent transition-all duration-300`}>
                   <CheckCircle2 size={20} className="text-[#C9A84C] shrink-0 mt-0.5" />
-                  <div>
+                  <div className="flex-1">
                     <h3 className={`font-bold text-[#0A1628] text-sm mb-0.5 ${isRTL ? 'font-persian' : ''}`}>{r.title}</h3>
                     <p className={`text-xs text-[#0A1628]/55 leading-relaxed ${isRTL ? 'font-persian' : ''}`}>{r.description}</p>
                   </div>
@@ -65,7 +65,7 @@ export default function WhyNoshanSection() {
 
             <div className={`mt-8 ${isRTL ? 'text-right' : ''}`}>
               <Link href="/about"
-                className={`inline-flex items-center gap-2 text-sm font-semibold text-[#0A1628] hover:text-[#C9A84C] transition-colors group ${isRTL ? 'flex-row-reverse font-persian' : ''}`}>
+                className={`inline-flex items-center gap-2 text-sm font-semibold text-[#0A1628] hover:text-[#C9A84C] transition-colors group ${isRTL ? 'font-persian' : ''}`}>
                 {locale === 'fa' ? 'بیشتر درباره من بدانید' : 'Learn more about me'}
                 <span className="w-6 h-px bg-[#0A1628] group-hover:bg-[#C9A84C] group-hover:w-10 transition-all duration-300" />
               </Link>
