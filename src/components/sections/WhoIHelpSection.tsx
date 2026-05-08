@@ -2,11 +2,11 @@ import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 
 const groupImages: Record<string, string> = {
-  Home:      'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=500&q=80',
-  Globe:     'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&q=80',
-  Briefcase: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=80',
-  User:      'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80',
-  Building2: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&q=80',
+  Home:      'https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=800&q=95',
+  Globe:     'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=95',
+  Briefcase: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=95',
+  User:      'https://images.unsplash.com/photo-1485217988980-11786ced9454?w=800&q=95',
+  Building2: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=95',
 };
 
 export default function WhoIHelpSection() {

@@ -8,12 +8,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 
 const serviceImages: Record<string, string> = {
-  'life-insurance':             'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=900&q=85',
-  'disability-insurance':       'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=85',
-  'critical-illness-insurance': 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1b89?w=900&q=85',
-  'whole-life-insurance':       'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=900&q=85',
-  'universal-life-insurance':   'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=85',
-  'travel-insurance':           'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=900&q=85',
+  'life-insurance':             'https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=1200&q=95',
+  'disability-insurance':       'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=95',
+  'critical-illness-insurance': 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1b89?w=1200&q=95',
+  'whole-life-insurance':       'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&q=95',
+  'universal-life-insurance':   'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=95',
+  'travel-insurance':           'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=95',
 };
 
 export default function ServicesSection() {

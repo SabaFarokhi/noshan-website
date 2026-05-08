@@ -23,15 +23,15 @@ export async function generateMetadata({
 }
 
 const postImages: Record<string, string> = {
-  'why-life-insurance-matters':        'https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80',
-  'newcomers-guide-to-insurance':      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80',
-  'disability-insurance-explained':    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
-  'critical-illness-coverage':         'https://images.unsplash.com/photo-1631815588090-d4bfec5b1b89?w=800&q=80',
-  'whole-vs-term-life-insurance':      'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&q=80',
-  'travel-insurance-tips':             'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80',
+  'why-life-insurance-matters':        'https://images.unsplash.com/photo-1491013516836-7db643ee125a?w=900&q=95',
+  'newcomers-guide-to-insurance':      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=95',
+  'disability-insurance-explained':    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=900&q=95',
+  'critical-illness-coverage':         'https://images.unsplash.com/photo-1631815588090-d4bfec5b1b89?w=900&q=95',
+  'whole-vs-term-life-insurance':      'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&q=95',
+  'travel-insurance-tips':             'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=95',
 };
 
-const fallbackImage = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80';
+const fallbackImage = 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&q=95';
 
 type BlogPost = { slug: string; title: string; excerpt: string; date: string; category: string; readTime: string };
 
