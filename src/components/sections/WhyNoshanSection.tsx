@@ -16,27 +16,27 @@ export default function WhyNoshanSection() {
 
           {/* Image side */}
           <div className={`relative ${isRTL ? 'order-2' : 'order-1'}`}>
-            <div className="relative rounded-3xl overflow-hidden h-[420px] lg:h-[520px] shadow-2xl shadow-[#0A1628]/10">
+            <div className="relative rounded-3xl overflow-hidden bg-[#F4F2EE] shadow-2xl shadow-[#0A1628]/10">
               <Image
                 src="/images/noshan.jpg"
                 alt="Noshan Hosseini - Insurance Advisor"
-                fill
-                className="object-cover object-center"
+                width={600}
+                height={800}
+                className="w-full h-auto object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#0A1628]/70 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <p className={`text-white font-semibold text-sm leading-relaxed ${isRTL ? 'font-persian text-right' : ''}`}>
-                  {locale === 'fa'
-                    ? '"هدفم اینه که بیمه رو ساده، قابل‌فهم و بدون فشار برای شما کنم."'
-                    : '"My goal is to make insurance simple, clear, and pressure-free for you."'}
-                </p>
-                <p className={`text-[#C9A84C] text-xs mt-1.5 font-medium ${isRTL ? 'font-persian text-right' : ''}`}>
-                  — {locale === 'fa' ? 'نوشان حسینی' : 'Noshan Hosseini'}
-                </p>
-              </div>
             </div>
-            <div className={`absolute -bottom-5 ${isRTL ? '-left-5' : '-right-5'} w-28 h-28 border-2 border-[#C9A84C]/25 rounded-3xl pointer-events-none`} />
+            {/* Quote below image */}
+            <div className={`mt-5 px-4 border-r-4 border-[#C9A84C] ${isRTL ? 'text-right border-r-4 border-l-0' : 'border-l-4 border-r-0'}`}>
+              <p className={`text-[#0A1628]/70 font-medium text-sm leading-relaxed italic ${isRTL ? 'font-persian not-italic' : ''}`}>
+                {locale === 'fa'
+                  ? '"هدفم اینه که بیمه رو ساده، قابل‌فهم و بدون فشار برای شما کنم."'
+                  : '"My goal is to make insurance simple, clear, and pressure-free for you."'}
+              </p>
+              <p className={`text-[#C9A84C] text-xs mt-1.5 font-semibold ${isRTL ? 'font-persian' : ''}`}>
+                — {locale === 'fa' ? 'نوشان حسینی' : 'Noshan Hosseini'}
+              </p>
+            </div>
           </div>
 
           {/* Text side */}
