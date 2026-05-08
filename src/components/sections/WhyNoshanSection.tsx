@@ -18,8 +18,8 @@ export default function WhyNoshanSection() {
           <div className={`relative ${isRTL ? 'order-2' : 'order-1'}`}>
             <div className="relative rounded-3xl overflow-hidden h-[420px] lg:h-[520px] shadow-2xl shadow-[#0A1628]/10">
               <Image
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=95"
-                alt="Insurance consultation and planning"
+                src="/images/noshan-profile.jpg"
+                alt="Noshan Hosseini - Insurance Advisor"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"

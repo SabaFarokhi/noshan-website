@@ -1,6 +1,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import type { Metadata } from 'next';
 import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/shared/WhatsAppButton';
@@ -26,13 +27,39 @@ function AboutContent() {
       <Navbar />
       <main className="pt-20">
         {/* Hero */}
-        <section className="bg-[#0A1628] py-20">
-          <div className="max-w-4xl mx-auto px-6 lg:px-10">
-            <div className={`${isRTL ? 'text-right' : ''}`}>
-              <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
-                {t('badge')}
+        <section className="bg-[#0A1628] py-16">
+          <div className="max-w-5xl mx-auto px-6 lg:px-10">
+            <div className={`flex flex-col lg:flex-row items-center gap-12 ${isRTL ? 'lg:flex-row-reverse text-right' : ''}`}>
+              {/* Photo */}
+              <div className="shrink-0 relative w-56 h-72 lg:w-72 lg:h-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 border-2 border-[#C9A84C]/20">
+                <Image
+                  src="/images/noshan-profile.jpg"
+                  alt="Noshan Hosseini"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/40 to-transparent" />
               </div>
-              <h1 className={`text-3xl lg:text-5xl font-bold text-white mb-5 leading-tight ${isRTL ? 'font-persian' : ''}`}>{t('title')}</h1>
+              {/* Text */}
+              <div>
+                <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
+                  {t('badge')}
+                </div>
+                <h1 className={`text-3xl lg:text-5xl font-bold text-white mb-5 leading-tight ${isRTL ? 'font-persian' : ''}`}>{t('title')}</h1>
+                <div className="flex flex-wrap gap-3 mt-6">
+                  {[
+                    { icon: Shield, label: locale === 'fa' ? 'مجاز FSRA' : 'FSRA Licensed' },
+                    { icon: Award, label: locale === 'fa' ? 'مشاور رسمی' : 'Certified Advisor' },
+                    { icon: Users, label: locale === 'fa' ? '۵۰۰+ مشتری' : '500+ Clients' },
+                  ].map(({ icon: Icon, label }, i) => (
+                    <div key={i} className="flex items-center gap-2 bg-white/8 border border-white/12 rounded-full px-4 py-2">
+                      <Icon size={14} className="text-[#C9A84C]" />
+                      <span className={`text-white/80 text-xs font-semibold ${isRTL ? 'font-persian' : ''}`}>{label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -40,26 +67,10 @@ function AboutContent() {
         {/* Bio */}
         <section className="bg-white py-16">
           <div className="max-w-4xl mx-auto px-6 lg:px-10">
-            <div className={`grid lg:grid-cols-3 gap-10 ${isRTL ? 'text-right' : ''}`}>
-              <div className="lg:col-span-2 space-y-5 text-[#0A1628]/70 leading-relaxed text-[17px]">
-                <p className={isRTL ? 'font-persian' : ''}>{t('bio1')}</p>
-                <p className={isRTL ? 'font-persian' : ''}>{t('bio2')}</p>
-                <p className={isRTL ? 'font-persian' : ''}>{t('bio3')}</p>
-              </div>
-              <div className="flex flex-col gap-4">
-                {[
-                  { icon: Shield, label: locale === 'fa' ? 'مجاز FSRA' : 'FSRA Licensed' },
-                  { icon: Award, label: locale === 'fa' ? 'مشاور رسمی' : 'Certified Advisor' },
-                  { icon: Users, label: locale === 'fa' ? '۵۰۰+ مشتری' : '500+ Clients' },
-                ].map(({ icon: Icon, label }, i) => (
-                  <div key={i} className={`flex items-center gap-3 bg-[#F4F2EE] rounded-xl px-4 py-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                    <div className="w-9 h-9 bg-[#C9A84C]/10 rounded-lg flex items-center justify-center shrink-0">
-                      <Icon size={17} className="text-[#C9A84C]" />
-                    </div>
-                    <span className={`font-semibold text-[#0A1628] text-sm ${isRTL ? 'font-persian' : ''}`}>{label}</span>
-                  </div>
-                ))}
-              </div>
+            <div className={`space-y-5 text-[#0A1628]/70 leading-relaxed text-[17px] ${isRTL ? 'text-right' : ''}`}>
+              <p className={isRTL ? 'font-persian' : ''}>{t('bio1')}</p>
+              <p className={isRTL ? 'font-persian' : ''}>{t('bio2')}</p>
+              <p className={isRTL ? 'font-persian' : ''}>{t('bio3')}</p>
             </div>
           </div>
         </section>
