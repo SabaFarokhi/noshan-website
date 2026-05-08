@@ -15,7 +15,7 @@ export default function HeroSection() {
 
       {/* ── FULL-BLEED BACKGROUND IMAGE ── */}
       <Image
-        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=2400&q=95"
+        src="https://images.unsplash.com/photo-1511895426328-dc8714191011?w=2400&q=95"
         alt="Insurance consultation"
         fill
         className="object-cover object-center"
