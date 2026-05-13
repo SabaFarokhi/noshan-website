@@ -4,9 +4,9 @@
   --color-navy:          #0A1628;
   --color-navy-light:    #142240;
   --color-navy-muted:    #1e3a5f;
-  --color-gold:          #C9A84C;
-  --color-gold-light:    #E8CC87;
-  --color-gold-pale:     #F9F3E3;
+  --color-gold:          #F5C518;
+  --color-gold-light:    #FAE060;
+  --color-gold-pale:     #FDF8E1;
   --color-warm-white:    #FAFAF8;
   --color-warm-gray:     #F4F2EE;
   --color-warm-gray-dark:#E5E1DA;
@@ -29,4 +29,4 @@ body {
 
 .font-persian { font-family: 'Vazirmatn', 'Tahoma', sans-serif; }
 
-::selection { background: #C9A84C22; }
+::selection { background: #F5C51822; }

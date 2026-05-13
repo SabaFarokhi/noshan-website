@@ -20,7 +20,7 @@ export default function WhoIHelpSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className={`text-center mb-16 ${isRTL ? 'font-persian' : ''}`}>
-          <p className="text-[#C9A84C] text-xs font-bold tracking-[0.2em] uppercase mb-3">
+          <p className="text-[#F5C518] text-xs font-bold tracking-[0.2em] uppercase mb-3">
             {locale === 'fa' ? 'مشتریان' : 'Who I Help'}
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#0A1628] mb-4">{t('title')}</h2>

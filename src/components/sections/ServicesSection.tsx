@@ -38,7 +38,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className={`text-center mb-16 ${isRTL ? 'font-persian' : ''}`}>
-          <p className="text-[#C9A84C] text-xs font-bold tracking-[0.2em] uppercase mb-3">
+          <p className="text-[#F5C518] text-xs font-bold tracking-[0.2em] uppercase mb-3">
             {locale === 'fa' ? 'خدمات' : 'Services'}
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#0A1628] mb-4">{t('title')}</h2>
@@ -56,7 +56,7 @@ export default function ServicesSection() {
                 className={`w-full group flex items-center gap-4 px-5 py-4 rounded-2xl transition-all duration-300 ${isRTL ? 'flex-row-reverse text-right' : 'text-left'} ${active === i ? 'bg-white shadow-lg shadow-[#0A1628]/6 border border-[#E5E1DA]' : 'hover:bg-white/50'}`}
               >
                 {/* Index / active indicator */}
-                <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${active === i ? 'bg-[#C9A84C] text-[#0A1628]' : 'bg-[#0A1628]/8 text-[#0A1628]/40'}`}>
+                <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${active === i ? 'bg-[#F5C518] text-[#0A1628]' : 'bg-[#0A1628]/8 text-[#0A1628]/40'}`}>
                   {i + 1}
                 </div>
 
@@ -80,7 +80,7 @@ export default function ServicesSection() {
                   <Link
                     href={`/services/${item.slug}`}
                     onClick={(e) => e.stopPropagation()}
-                    className={`shrink-0 inline-flex items-center gap-1 text-xs font-semibold text-[#C9A84C] hover:text-[#0A1628] transition-colors ${isRTL ? 'flex-row-reverse font-persian' : ''}`}
+                    className={`shrink-0 inline-flex items-center gap-1 text-xs font-semibold text-[#F5C518] hover:text-[#0A1628] transition-colors ${isRTL ? 'flex-row-reverse font-persian' : ''}`}
                   >
                     {t('learnMore')}
                     <Arrow size={12} />
@@ -92,7 +92,7 @@ export default function ServicesSection() {
             {/* Progress bar */}
             <div className="mt-6 h-0.5 bg-[#0A1628]/8 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-[#C9A84C] rounded-full"
+                className="h-full bg-[#F5C518] rounded-full"
                 key={active}
                 initial={{ width: '0%' }}
                 animate={{ width: '100%' }}

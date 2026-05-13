@@ -34,10 +34,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: -16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className={`inline-flex items-center gap-2 border border-[#C9A84C]/40 bg-[#C9A84C]/10 text-[#C9A84C] text-xs font-semibold px-5 py-2 rounded-full mb-8 ${isRTL ? '' : 'tracking-widest uppercase'}`}
+          className={`inline-flex items-center gap-2 border border-[#F5C518]/40 bg-[#F5C518]/10 text-[#F5C518] text-xs font-semibold px-5 py-2 rounded-full mb-8 ${isRTL ? '' : 'tracking-widest uppercase'}`}
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] animate-pulse" />
-          {locale === 'fa' ? 'مشاور بیمه مجاز · FSRA · انتاریو' : 'FSRA Licensed Insurance Advisor · Ontario'}
+          <span className="w-1.5 h-1.5 rounded-full bg-[#F5C518] animate-pulse" />
+          {locale === 'fa' ? 'مشاور بیمه مجاز · LLQP · انتاریو' : 'LLQP Licensed Insurance Advisor · Ontario'}
         </motion.div>
 
         {/* Name */}
@@ -56,7 +56,7 @@ export default function HeroSection() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="w-20 h-0.5 bg-[#C9A84C] rounded-full mb-6"
+          className="w-20 h-0.5 bg-[#F5C518] rounded-full mb-6"
         />
 
         {/* Tagline */}
@@ -78,7 +78,7 @@ export default function HeroSection() {
         >
           <Link
             href="/contact"
-            className={`inline-flex items-center justify-center bg-[#C9A84C] hover:bg-[#E8CC87] text-[#0A1628] font-bold text-sm px-10 py-4 rounded-full transition-all duration-300 shadow-lg shadow-[#C9A84C]/30 ${isRTL ? 'font-persian' : ''}`}
+            className={`inline-flex items-center justify-center bg-[#F5C518] hover:bg-[#FAE060] text-[#0A1628] font-bold text-sm px-10 py-4 rounded-full transition-all duration-300 shadow-lg shadow-[#F5C518]/30 ${isRTL ? 'font-persian' : ''}`}
           >
             {t('ctaBook')}
           </Link>
@@ -104,7 +104,7 @@ export default function HeroSection() {
           <div className={`max-w-4xl mx-auto px-6 py-5 flex flex-wrap justify-center gap-10 ${isRTL ? 'flex-row-reverse' : ''}`}>
             {[
               { v: locale === 'fa' ? '۵۰۰+' : '500+',      l: locale === 'fa' ? 'خانواده محافظت‌شده' : 'Families Protected' },
-              { v: 'FSRA',                                    l: locale === 'fa' ? 'مجاز رسمی'          : 'Officially Licensed' },
+              { v: 'LLQP',                                    l: locale === 'fa' ? 'مجاز رسمی'          : 'Officially Licensed' },
               { v: locale === 'fa' ? 'دوزبانه' : 'Bilingual', l: 'English · فارسی' },
               { v: locale === 'fa' ? 'رایگان' : 'Free',       l: locale === 'fa' ? 'مشاوره اول'         : 'First Consultation' },
             ].map((s, i) => (

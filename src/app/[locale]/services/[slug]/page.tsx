@@ -112,7 +112,7 @@ function ServicePageContent({ slug }: { slug: string }) {
                 <ul className="space-y-3">
                   {benefits.map((benefit, i) => (
                     <li key={i} className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
-                      <CheckCircle2 size={18} className="text-[#C9A84C] shrink-0 mt-0.5" />
+                      <CheckCircle2 size={18} className="text-[#F5C518] shrink-0 mt-0.5" />
                       <span className={`text-[#0A1628]/70 ${isRTL ? 'font-persian' : ''}`}>{benefit}</span>
                     </li>
                   ))}
@@ -132,9 +132,9 @@ function ServicePageContent({ slug }: { slug: string }) {
               {types.map((type, i) => (
                 <div
                   key={i}
-                  className={`bg-white rounded-2xl p-6 border border-[#E5E1DA] hover:border-[#C9A84C]/30 hover:shadow-md transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
+                  className={`bg-white rounded-2xl p-6 border border-[#E5E1DA] hover:border-[#F5C518]/30 hover:shadow-md transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
                 >
-                  <div className="w-8 h-1 bg-[#C9A84C] rounded-full mb-4" />
+                  <div className="w-8 h-1 bg-[#F5C518] rounded-full mb-4" />
                   <h3 className={`font-bold text-[#0A1628] mb-2 ${isRTL ? 'font-persian' : ''}`}>
                     {type.name}
                   </h3>

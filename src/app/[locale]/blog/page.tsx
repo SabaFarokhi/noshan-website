@@ -49,7 +49,7 @@ function BlogContent() {
         <section className="bg-[#F4F2EE] py-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className={`mb-14 ${isRTL ? 'text-right font-persian' : 'text-center'}`}>
-              <div className={`inline-flex items-center gap-2 bg-[#C9A84C]/10 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-wide'}`}>
+              <div className={`inline-flex items-center gap-2 bg-[#F5C518]/10 text-[#F5C518] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-wide'}`}>
                 {t('badge')}
               </div>
               <h1 className={`text-3xl lg:text-4xl font-bold text-[#0A1628] mb-4 ${isRTL ? 'font-persian' : ''}`}>
@@ -65,7 +65,7 @@ function BlogContent() {
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className={`group bg-white rounded-2xl overflow-hidden border border-[#E5E1DA] hover:border-[#C9A84C]/30 hover:shadow-xl hover:shadow-[#0A1628]/6 transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
+                  className={`group bg-white rounded-2xl overflow-hidden border border-[#E5E1DA] hover:border-[#F5C518]/30 hover:shadow-xl hover:shadow-[#0A1628]/6 transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
                 >
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
@@ -78,7 +78,7 @@ function BlogContent() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/50 to-transparent" />
                     <div className={`absolute bottom-4 ${isRTL ? 'right-4' : 'left-4'}`}>
-                      <span className={`bg-[#C9A84C] text-[#0A1628] text-xs font-bold px-3 py-1 rounded-full ${isRTL ? 'font-persian' : ''}`}>
+                      <span className={`bg-[#F5C518] text-[#0A1628] text-xs font-bold px-3 py-1 rounded-full ${isRTL ? 'font-persian' : ''}`}>
                         {post.category}
                       </span>
                     </div>
@@ -90,13 +90,13 @@ function BlogContent() {
                       <span>·</span>
                       <span>{post.readTime}</span>
                     </div>
-                    <h2 className={`text-lg font-bold text-[#0A1628] mb-3 group-hover:text-[#C9A84C] transition-colors leading-snug ${isRTL ? 'font-persian' : ''}`}>
+                    <h2 className={`text-lg font-bold text-[#0A1628] mb-3 group-hover:text-[#F5C518] transition-colors leading-snug ${isRTL ? 'font-persian' : ''}`}>
                       {post.title}
                     </h2>
                     <p className={`text-sm text-[#0A1628]/55 leading-relaxed mb-5 ${isRTL ? 'font-persian' : ''}`}>
                       {post.excerpt}
                     </p>
-                    <span className={`inline-flex items-center gap-1.5 text-sm font-semibold text-[#0A1628] group-hover:text-[#C9A84C] transition-colors ${isRTL ? 'flex-row-reverse font-persian' : ''}`}>
+                    <span className={`inline-flex items-center gap-1.5 text-sm font-semibold text-[#0A1628] group-hover:text-[#F5C518] transition-colors ${isRTL ? 'flex-row-reverse font-persian' : ''}`}>
                       {t('readMore')}
                       <ArrowIcon size={14} className="group-hover:translate-x-0.5 transition-transform" />
                     </span>

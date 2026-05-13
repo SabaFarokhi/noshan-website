@@ -47,7 +47,7 @@ export default function ContactForm() {
       {/* Header */}
       <section className="bg-[#0A1628] py-20">
         <div className={`max-w-4xl mx-auto px-6 lg:px-10 ${isRTL ? 'text-right' : 'text-center'}`}>
-          <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-widest'}`}>
+          <div className={`inline-flex items-center gap-2 border border-[#F5C518]/30 bg-[#F5C518]/5 text-[#F5C518] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-widest'}`}>
             {t('badge')}
           </div>
           <h1 className={`text-3xl lg:text-4xl font-bold text-white mb-4 ${isRTL ? 'font-persian' : ''}`}>
@@ -169,8 +169,8 @@ export default function ContactForm() {
               {/* Book a Call */}
               <div className={`bg-[#0A1628] rounded-2xl p-6 ${isRTL ? 'text-right' : ''}`}>
                 <div className={`flex items-start gap-3 mb-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  <div className="w-10 h-10 bg-[#C9A84C]/20 rounded-xl flex items-center justify-center shrink-0">
-                    <Calendar size={18} className="text-[#C9A84C]" />
+                  <div className="w-10 h-10 bg-[#F5C518]/20 rounded-xl flex items-center justify-center shrink-0">
+                    <Calendar size={18} className="text-[#F5C518]" />
                   </div>
                   <div>
                     <h3 className={`font-bold text-white ${isRTL ? 'font-persian' : ''}`}>
@@ -183,7 +183,7 @@ export default function ContactForm() {
                 </div>
                 <a
                   href="#"
-                  className={`block text-center bg-[#C9A84C] text-[#0A1628] text-sm font-bold py-3 rounded-xl hover:bg-[#E8CC87] transition-colors duration-200 mt-4 ${isRTL ? 'font-persian' : ''}`}
+                  className={`block text-center bg-[#F5C518] text-[#0A1628] text-sm font-bold py-3 rounded-xl hover:bg-[#FAE060] transition-colors duration-200 mt-4 ${isRTL ? 'font-persian' : ''}`}
                 >
                   {t('booking.cta')}
                 </a>

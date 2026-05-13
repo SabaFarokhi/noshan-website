@@ -25,7 +25,7 @@ export default function FAQPage() {
         {/* Header */}
         <section className="bg-[#0A1628] py-20">
           <div className={`max-w-3xl mx-auto px-6 lg:px-10 ${isRTL ? 'text-right' : 'text-center'}`}>
-            <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-widest'}`}>
+            <div className={`inline-flex items-center gap-2 border border-[#F5C518]/30 bg-[#F5C518]/5 text-[#F5C518] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-widest'}`}>
               {t('badge')}
             </div>
             <h1 className={`text-3xl lg:text-4xl font-bold text-white mb-4 ${isRTL ? 'font-persian' : ''}`}>

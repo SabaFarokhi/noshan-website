@@ -45,7 +45,7 @@ export default function Footer() {
             <p className={`text-lg font-bold text-white mb-1 ${isRTL ? 'font-persian' : ''}`}>
               {locale === 'fa' ? 'نوشان حسینی' : 'Noshan Hosseini'}
             </p>
-            <p className={`text-[12px] text-[#C9A84C]/70 font-medium mb-6 ${isRTL ? 'font-persian' : 'tracking-wide'}`}>
+            <p className={`text-[12px] text-[#F5C518]/70 font-medium mb-6 ${isRTL ? 'font-persian' : 'tracking-wide'}`}>
               {t('tagline')}
             </p>
             <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>

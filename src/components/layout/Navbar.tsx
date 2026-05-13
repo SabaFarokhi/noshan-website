@@ -41,7 +41,7 @@ export default function Navbar() {
             <span className={`text-[16px] font-bold leading-tight transition-colors duration-300 ${scrolled ? 'text-[#0A1628]' : 'text-white'} ${isRTL ? 'font-persian' : ''}`}>
               {locale === 'fa' ? 'نوشان حسینی' : 'Noshan Hosseini'}
             </span>
-            <span className={`text-[11px] text-[#C9A84C] font-semibold mt-0.5 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
+            <span className={`text-[11px] text-[#F5C518] font-semibold mt-0.5 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
               {locale === 'fa' ? 'مشاور بیمه' : 'Insurance Advisor'}
             </span>
           </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
               <Link key={l.href} href={l.href}
                 className={`text-sm font-medium transition-colors relative group ${scrolled ? 'text-[#0A1628]/65 hover:text-[#0A1628]' : 'text-white/80 hover:text-white'} ${isRTL ? 'font-persian' : ''}`}>
                 {l.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C9A84C] group-hover:w-full transition-all duration-200" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F5C518] group-hover:w-full transition-all duration-200" />
               </Link>
             ))}
           </div>

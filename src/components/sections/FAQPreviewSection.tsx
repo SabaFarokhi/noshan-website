@@ -18,7 +18,7 @@ export default function FAQPreviewSection() {
       <div className="max-w-3xl mx-auto px-6 lg:px-10">
 
         <div className={`text-center mb-12 ${isRTL ? 'font-persian' : ''}`}>
-          <p className="text-[#C9A84C] text-xs font-bold tracking-[0.2em] uppercase mb-3">FAQ</p>
+          <p className="text-[#F5C518] text-xs font-bold tracking-[0.2em] uppercase mb-3">FAQ</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#0A1628] mb-4">{t('title')}</h2>
           <p className="text-[#0A1628]/55 text-lg">{t('subtitle')}</p>
         </div>
@@ -45,7 +45,7 @@ export default function FAQPreviewSection() {
         <div className={isRTL ? 'text-right' : 'text-center'}>
           <Link
             href="/faq"
-            className={`inline-flex items-center gap-2 text-sm font-semibold text-[#0A1628] hover:text-[#C9A84C] transition-colors group ${isRTL ? 'flex-row-reverse font-persian' : ''}`}
+            className={`inline-flex items-center gap-2 text-sm font-semibold text-[#0A1628] hover:text-[#F5C518] transition-colors group ${isRTL ? 'flex-row-reverse font-persian' : ''}`}
           >
             {t('viewAll')}
             <Arrow size={15} className="group-hover:translate-x-0.5 transition-transform" />

@@ -29,7 +29,7 @@ export default function ProcessSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className={`text-center mb-16 ${isRTL ? 'font-persian' : ''}`}>
-          <p className="text-[#C9A84C] text-xs font-bold tracking-[0.2em] uppercase mb-3">
+          <p className="text-[#F5C518] text-xs font-bold tracking-[0.2em] uppercase mb-3">
             {locale === 'fa' ? 'فرآیند' : 'The Process'}
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{t('title')}</h2>
@@ -72,13 +72,13 @@ export default function ProcessSection() {
                   <g key={i} className="cursor-pointer" onClick={() => setActive(i)}>
                     {/* Outer glow ring when active */}
                     {isActive && (
-                      <circle cx={x} cy={y} r={28} fill="#C9A84C" fillOpacity="0.12" />
+                      <circle cx={x} cy={y} r={28} fill="#F5C518" fillOpacity="0.12" />
                     )}
                     {/* Node circle */}
                     <circle
                       cx={x} cy={y} r={20}
-                      fill={isActive ? '#C9A84C' : 'rgba(255,255,255,0.06)'}
-                      stroke={isActive ? '#C9A84C' : 'rgba(255,255,255,0.15)'}
+                      fill={isActive ? '#F5C518' : 'rgba(255,255,255,0.06)'}
+                      stroke={isActive ? '#F5C518' : 'rgba(255,255,255,0.15)'}
                       strokeWidth="1"
                       style={{ transition: 'fill 0.4s, stroke 0.4s' }}
                     />
@@ -98,14 +98,14 @@ export default function ProcessSection() {
               })}
 
               {/* Center hub */}
-              <circle cx={cx} cy={cy} r={36} fill="rgba(201,168,76,0.08)" stroke="#C9A84C" strokeOpacity="0.25" strokeWidth="1" />
+              <circle cx={cx} cy={cy} r={36} fill="rgba(201,168,76,0.08)" stroke="#F5C518" strokeOpacity="0.25" strokeWidth="1" />
               <circle cx={cx} cy={cy} r={22} fill="rgba(201,168,76,0.15)" />
-              <circle cx={cx} cy={cy} r={8} fill="#C9A84C" />
+              <circle cx={cx} cy={cy} r={8} fill="#F5C518" />
             </svg>
 
             {/* Rotating ring animation */}
             <motion.div
-              className="absolute inset-0 rounded-full border border-[#C9A84C]/10 pointer-events-none"
+              className="absolute inset-0 rounded-full border border-[#F5C518]/10 pointer-events-none"
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
             />
@@ -119,7 +119,7 @@ export default function ProcessSection() {
                 <button
                   key={i}
                   onClick={() => setActive(i)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-300 ${isRTL ? 'flex-row-reverse font-persian' : ''} ${active === i ? 'bg-[#C9A84C] text-[#0A1628]' : 'bg-white/8 text-white/55 hover:bg-white/15 hover:text-white/80'}`}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-300 ${isRTL ? 'flex-row-reverse font-persian' : ''} ${active === i ? 'bg-[#F5C518] text-[#0A1628]' : 'bg-white/8 text-white/55 hover:bg-white/15 hover:text-white/80'}`}
                 >
                   <span>{step.number}</span>
                   <span>{step.title}</span>
@@ -137,12 +137,12 @@ export default function ProcessSection() {
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-full bg-[#C9A84C]/15 border border-[#C9A84C]/30 flex items-center justify-center">
-                    <span className={`text-[#C9A84C] font-bold text-sm ${isRTL ? 'font-persian' : ''}`}>
+                  <div className="w-10 h-10 rounded-full bg-[#F5C518]/15 border border-[#F5C518]/30 flex items-center justify-center">
+                    <span className={`text-[#F5C518] font-bold text-sm ${isRTL ? 'font-persian' : ''}`}>
                       {steps[active].number}
                     </span>
                   </div>
-                  <div className="w-12 h-px bg-[#C9A84C]/40" />
+                  <div className="w-12 h-px bg-[#F5C518]/40" />
                 </div>
                 <h3 className={`text-2xl lg:text-3xl font-bold text-white mb-4 ${isRTL ? 'font-persian' : ''}`}>
                   {steps[active].title}
@@ -157,7 +157,7 @@ export default function ProcessSection() {
                     <button
                       key={i}
                       onClick={() => setActive(i)}
-                      className={`h-1 rounded-full transition-all duration-300 ${active === i ? 'w-8 bg-[#C9A84C]' : 'w-3 bg-white/20'}`}
+                      className={`h-1 rounded-full transition-all duration-300 ${active === i ? 'w-8 bg-[#F5C518]' : 'w-3 bg-white/20'}`}
                     />
                   ))}
                 </div>

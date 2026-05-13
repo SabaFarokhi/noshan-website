@@ -47,7 +47,7 @@ function ServicesContent() {
         <section className="bg-[#0A1628] py-20">
           <div className="max-w-7xl mx-auto px-6 lg:px-10">
             <div className={`${isRTL ? 'text-right' : 'text-center'}`}>
-              <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-widest'}`}>
+              <div className={`inline-flex items-center gap-2 border border-[#F5C518]/30 bg-[#F5C518]/5 text-[#F5C518] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'uppercase tracking-widest'}`}>
                 {locale === 'fa' ? 'خدمات ما' : 'Our Services'}
               </div>
               <h1 className={`text-3xl lg:text-4xl font-bold text-white mb-4 ${isRTL ? 'font-persian' : ''}`}>
@@ -67,7 +67,7 @@ function ServicesContent() {
                 <Link
                   key={item.slug}
                   href={`/services/${item.slug}`}
-                  className={`group bg-white rounded-2xl overflow-hidden border border-[#E5E1DA] hover:border-[#C9A84C]/30 hover:shadow-xl hover:shadow-[#0A1628]/6 transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
+                  className={`group bg-white rounded-2xl overflow-hidden border border-[#E5E1DA] hover:border-[#F5C518]/30 hover:shadow-xl hover:shadow-[#0A1628]/6 transition-all duration-300 ${isRTL ? 'text-right' : ''}`}
                 >
                   <div className="relative h-44 overflow-hidden">
                     <Image
@@ -86,7 +86,7 @@ function ServicesContent() {
                     <p className={`text-sm text-[#0A1628]/55 leading-relaxed mb-5 ${isRTL ? 'font-persian' : ''}`}>
                       {item.description}
                     </p>
-                    <span className={`inline-flex items-center gap-1.5 text-sm font-semibold text-[#0A1628] group-hover:text-[#C9A84C] transition-colors ${isRTL ? 'flex-row-reverse font-persian' : ''}`}>
+                    <span className={`inline-flex items-center gap-1.5 text-sm font-semibold text-[#0A1628] group-hover:text-[#F5C518] transition-colors ${isRTL ? 'flex-row-reverse font-persian' : ''}`}>
                       {t('learnMore')}
                       <ArrowIcon size={14} className="group-hover:translate-x-0.5 transition-transform" />
                     </span>

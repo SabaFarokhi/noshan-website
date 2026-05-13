@@ -31,7 +31,7 @@ function AboutContent() {
           <div className="max-w-5xl mx-auto px-6 lg:px-10">
             <div className={`flex flex-col lg:flex-row items-center gap-12 ${isRTL ? 'lg:flex-row-reverse text-right' : ''}`}>
               {/* Photo */}
-              <div className="shrink-0 relative w-56 h-72 lg:w-72 lg:h-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 border-2 border-[#C9A84C]/20">
+              <div className="shrink-0 relative w-56 h-72 lg:w-72 lg:h-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 border-2 border-[#F5C518]/20">
                 <Image
                   src="/images/noshan.jpg"
                   alt="Noshan Hosseini"
@@ -43,18 +43,18 @@ function AboutContent() {
               </div>
               {/* Text */}
               <div>
-                <div className={`inline-flex items-center gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/5 text-[#C9A84C] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
+                <div className={`inline-flex items-center gap-2 border border-[#F5C518]/30 bg-[#F5C518]/5 text-[#F5C518] text-xs font-semibold px-4 py-2 rounded-full mb-6 ${isRTL ? 'font-persian' : 'tracking-widest uppercase'}`}>
                   {t('badge')}
                 </div>
                 <h1 className={`text-3xl lg:text-5xl font-bold text-white mb-5 leading-tight ${isRTL ? 'font-persian' : ''}`}>{t('title')}</h1>
                 <div className="flex flex-wrap gap-3 mt-6">
                   {[
-                    { icon: Shield, label: locale === 'fa' ? 'مجاز FSRA' : 'FSRA Licensed' },
+                    { icon: Shield, label: locale === 'fa' ? 'مجاز LLQP' : 'LLQP Licensed' },
                     { icon: Award, label: locale === 'fa' ? 'مشاور رسمی' : 'Certified Advisor' },
                     { icon: Users, label: locale === 'fa' ? '۵۰۰+ مشتری' : '500+ Clients' },
                   ].map(({ icon: Icon, label }, i) => (
                     <div key={i} className="flex items-center gap-2 bg-white/8 border border-white/12 rounded-full px-4 py-2">
-                      <Icon size={14} className="text-[#C9A84C]" />
+                      <Icon size={14} className="text-[#F5C518]" />
                       <span className={`text-white/80 text-xs font-semibold ${isRTL ? 'font-persian' : ''}`}>{label}</span>
                     </div>
                   ))}
@@ -82,7 +82,7 @@ function AboutContent() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {values.map((v, i) => (
                 <div key={i} className={`flex items-start gap-3 bg-white rounded-2xl p-5 border border-[#E5E1DA] ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
-                  <CheckCircle2 size={18} className="text-[#C9A84C] shrink-0 mt-0.5" />
+                  <CheckCircle2 size={18} className="text-[#F5C518] shrink-0 mt-0.5" />
                   <span className={`font-medium text-[#0A1628] text-sm ${isRTL ? 'font-persian' : ''}`}>{v}</span>
                 </div>
               ))}

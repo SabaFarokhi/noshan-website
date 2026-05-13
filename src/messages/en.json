@@ -22,7 +22,7 @@
       { "value": "500+", "label": "Families Protected" },
       { "value": "6+", "label": "Insurance Products" },
       { "value": "Ontario", "label": "Licensed & Regulated" },
-      { "value": "FSRA", "label": "Compliant Advice" }
+      { "value": "LLQP", "label": "Compliant Advice" }
     ]
   },
   "services": {
@@ -116,7 +116,7 @@
         "description": "Fluent in both English and Persian, providing culturally comfortable service for the Iranian community."
       },
       {
-        "title": "FSRA-Regulated Advice",
+        "title": "LLQP Licensed Advice",
         "description": "Licensed and regulated by the Financial Services Regulatory Authority of Ontario. Your trust is always protected."
       },
       {
@@ -186,7 +186,7 @@
       "faq": "FAQ",
       "contact": "Contact"
     },
-    "disclaimer": "The information on this website is for educational purposes only and does not replace personalized insurance advice. Noshan Hosseini is a licensed insurance advisor regulated by the Financial Services Regulatory Authority of Ontario (FSRA).",
+    "disclaimer": "The information on this website is for educational purposes only and does not replace personalized insurance advice. Noshan Hosseini is a licensed insurance advisor regulated by the Financial Services Regulatory Authority of Ontario (LLQP).",
     "rights": "All rights reserved.",
     "phone": "437-971-7732",
     "instagram": "@noshan_hosseini"
@@ -201,7 +201,7 @@
     "values": [
       "Honest, pressure-free advice — always",
       "Fully bilingual service in English and Persian",
-      "FSRA-regulated, compliant guidance",
+      "LLQP licensed, compliant guidance",
       "Ongoing support throughout your journey",
       "Personalized plans, not cookie-cutter solutions"
     ],
